@@ -7,10 +7,10 @@
     <title>Christian Tampus WebCV</title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
- 
+
     <!-- Favicons -->
     <link href="assets/img/tampus.ico" rel="icon" />
-   
+
     <!-- Vendor CSS Files -->
     <link
       href="assets/vendor/bootstrap/css/bootstrap.min.css"
@@ -180,7 +180,7 @@
         </div>
       </section>
       <!-- End About Section -->
-<!-- update -->
+      <!-- update -->
       <!-- ======= Services Section ======= -->
       <section id="services" class="services-mf pt-5 route">
         <div class="container">
@@ -188,9 +188,7 @@
             <div class="col-sm-12">
               <div class="title-box text-center">
                 <h3 class="title-a">Awards and Certificates</h3>
-                <p class="subtitle-a">
-                  Special awards and certificate
-                </p>
+                <p class="subtitle-a">Special awards and certificate</p>
                 <div class="line-mf"></div>
               </div>
             </div>
@@ -199,16 +197,16 @@
             <div class="col-md-4">
               <div class="service-box">
                 <div class="service-ico">
-                  <span class="ico-circle"
-                    ><i class="bi bi-braces"></i
-                  ></span>
+                  <span class="ico-circle"><i class="bi bi-braces"></i></span>
                 </div>
                 <div class="service-content">
                   <h2 class="s-title">EDP Specialist Eligibility</h2>
                   <p class="s-description text-center">
-                    Electronic Data Processing Specialist Eligibility (Computer Programming)
-                    issued by the Department of Information and Communication Technology. 
-                  </p><br>
+                    Electronic Data Processing Specialist Eligibility (Computer
+                    Programming) issued by the Department of Information and
+                    Communication Technology.
+                  </p>
+                  <br />
                 </div>
               </div>
             </div>
@@ -223,9 +221,10 @@
                   <h2 class="s-title">Recognition</h2>
                   <p class="s-description text-center">
                     Appreciation and Recognition of Invaluable services rendered
-                    during the ISO 9001:2015 Certification of
-                    Central Mindanao University. 
-                  </p><br>
+                    during the ISO 9001:2015 Certification of Central Mindanao
+                    University.
+                  </p>
+                  <br />
                 </div>
               </div>
             </div>
@@ -259,9 +258,7 @@
             <div class="col-sm-12">
               <div class="title-box text-center">
                 <h3 class="title-a">Portfolio</h3>
-                <p class="subtitle-a">
-                  My works and outputs
-                </p>
+                <p class="subtitle-a">My works and outputs</p>
                 <div class="line-mf"></div>
               </div>
             </div>
@@ -281,9 +278,11 @@
                 <div class="work-content">
                   <div class="row">
                     <div class="col-sm-8">
-                      <h2 class="w-title">Customer Satisfaction Survey Results Generation</h2>
+                      <h2 class="w-title">
+                        Customer Satisfaction Survey Results Generation
+                      </h2>
                       <div class="w-more">
-                        <span class="w-ctegory">Web Application</span> 
+                        <span class="w-ctegory">Web Application</span>
                       </div>
                     </div>
                     <div class="col-sm-4">
@@ -311,9 +310,11 @@
                 <div class="work-content">
                   <div class="row">
                     <div class="col-sm-8">
-                      <h2 class="w-title">ISO 9001:2015 QMS <br>Risk Register</h2>
+                      <h2 class="w-title">
+                        ISO 9001:2015 QMS <br />Risk Register
+                      </h2>
                       <div class="w-more">
-                        <span class="w-ctegory">Web Application</span> 
+                        <span class="w-ctegory">Web Application</span>
                       </div>
                     </div>
                     <div class="col-sm-4">
@@ -341,9 +342,12 @@
                 <div class="work-content">
                   <div class="row">
                     <div class="col-sm-8">
-                      <h2 class="w-title">Event/Activity <br> Posters and Inviations</h2>
+                      <h2 class="w-title">
+                        Event/Activity <br />
+                        Posters and Inviations
+                      </h2>
                       <div class="w-more">
-                        <span class="w-ctegory">Graphic Designs</span> 
+                        <span class="w-ctegory">Graphic Designs</span>
                       </div>
                     </div>
                     <div class="col-sm-4">
@@ -357,7 +361,6 @@
                 </div>
               </div>
             </div>
-            
           </div>
         </div>
       </section>
@@ -396,7 +399,6 @@
                                   class="form-control"
                                   id="name"
                                   placeholder="Your Name"
-                                  required
                                 />
                               </div>
                             </div>
@@ -408,7 +410,6 @@
                                   name="email"
                                   id="email"
                                   placeholder="Your Email"
-                                  required
                                 />
                               </div>
                             </div>
@@ -420,7 +421,6 @@
                                   name="subject"
                                   id="subject"
                                   placeholder="Subject"
-                                  required
                                 />
                               </div>
                             </div>
@@ -431,7 +431,6 @@
                                   name="message"
                                   rows="5"
                                   placeholder="Message"
-                                  required
                                 ></textarea>
                               </div>
                             </div>
@@ -443,8 +442,9 @@
                               </div>
                             </div>
                             <div class="col-md-12 text-center">
+                              <!-- type="submit" -->
                               <button
-                                type="submit"
+                                id="btnSendEmail"
                                 class="button button-a button-big button-rouded"
                               >
                                 Send Message
@@ -559,5 +559,16 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+
+    <script>
+      document
+        .getElementById("btnSendEmail")
+        .addEventListener("click", function (event) {
+          event.preventDefault();
+          alert(
+            "Sorry di pani mugana ang send email hehe need pa i configure ang SMTP."
+          );
+        });
+    </script>
   </body>
 </html>
