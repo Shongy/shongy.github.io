@@ -191,6 +191,27 @@ a:hover {
   bottom: -12px;
 }
 
+/*--/ Title Center /--*/
+.title-box-center {
+  margin-bottom: 3rem;
+}
+
+.title-center {
+  font-size: 2rem;
+  position: relative;
+  text-align: center;
+}
+/* 
+.title-center:before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background-color: #0078ff;
+  width: 100%;
+  bottom: -12px;
+  text-align: center;
+} */
+
 /*------/ Box /------*/
 .box-pl2 {
   padding-left: 2rem;
@@ -259,6 +280,18 @@ a:hover {
   color: #0078ff;
   margin-right: 10px;
 }
+
+.list-ico2 {
+  line-height: 2;
+  text-align: center;
+  list-style-type: none;
+}
+
+.list-ico2 span {
+  color: #0078ff;
+  margin-right: 10px;
+}
+
 
 /*------/ Ico Circle /------*/
 .ico-circle {
